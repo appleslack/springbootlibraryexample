@@ -19,6 +19,11 @@ public class Publisher {
     private String state;
     private String postalCode;
     
+    // Need this default Publisher constructor for Hibernate / JDB
+    public Publisher() {
+
+    }
+
     public Publisher(String name, String address1, String city, String state, String postalCode) {
         this.name = name;
         this.address1 = address1;
